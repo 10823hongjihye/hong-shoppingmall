@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hong Shoppingmall</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+
+            <ul class="main-menu">
+                <li>상의
+                    <ul class="sub-menu">
+                        <li>니트</li>
+                        <li>맨투맨</li>
+                        <li>후드</li>
+                        <li>박스티</li>
+                    </ul>
+                </li>
+               
+                <li>하의
+                    <ul class="sub-menu">
+                        <li>정장바지</li>
+                        <li>멜빵바지</li>
+                        <li>숏팬츠</li>
+                        <li>레깅스</li>
+                    </ul>
+                </li>
+
+                <li>아우터
+                    <ul class="sub-menu">
+                        <li>바시티자켓</li>
+                        <li>트렌치코트</li>
+                        <li>후드집업</li>
+                        <li>커버올</li>
+                    </ul>
+                </li>
+
+                <li>드레스
+                    <ul class="sub-menu">
+                        <li>셔츠드레스</li>
+                        <li>파티드레스</li>
+                        <li>뷔스티에</li>
+                        <li>원피스</li>
+                    </ul>
+                </li>
+
+
+            </ul>
+        </div>
+
+
+
+        <div class="slide">
+            <img src="" alt="">
+        </div>
+
+
+        <div class="contents">
+
+            <div class="box">
+
+                <button class="btn-notice">공지사항</button>
+                <button class="btn-gallery">갤러리</button>
+
+
+                <div class="notice">
+                    <ul>
+                        <li class="open-pop">2024년도 블랙프라이데이 초특가 할인행사</li>
+                        <li>연말을 맞이하여 1+1 추가 할인혜택행사</li>
+                        <li>신규 고갹을 위한 맞춤형 서비스 할인행사</li>
+                        <li>수원점 hong 쇼핑몰 GRAND OPEN 할인행사</li>
+                        <li>지금당장 회원가입 하시면 30000포인트 증정</li>
+                    </ul>
+
+                </div>
+
+                <div class="gallery">
+                    <ul>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+            <div class="banner">
+                <img src="" alt="">
+            </div>
+
+            <div class="baro">
+                <img src="" alt="">
+            </div>
+    
+        </div>
+
+
+        <div class="footer">
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+
+            <div class="copy">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur neque repudiandae ipsam sed corporis magnam amet voluptatem numquam dignissimos, possimus officia qui eaque quod. Pariatur consequatur officiis ab consectetur saepe.
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="pop">
+        <h1>!!2024 초특가 연말세일!!</h1>
+        <p>5만원 이상 구매시 30% 할인</p>
+        <p>10만원 이상 구매시 40% 할인</p>
+        <p>크리스마스 한정 장식 인형 증정</p>
+
+        <button class="close-pop">닫기</button>
+    </div>
+
+
+
+
+
+
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+ integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+ <script>
+
+    $(".open-pop").click(function(){
+        $(".pop").slideDown();
+    })
+    $(".close-pop").click(function(){
+        $(".pop").slideUp();
+    })
+
+
+    $(".btn-gallery").click(function () {
+        $(".gallery").show();
+        $(".notice").hide();
+    })
+
+    $(".btn-notice").click(function () {
+        $(".notice").show();
+        $(".gallery").hide();
+    })
+
+
+    $(".main-menu>li").mouseover(function () {
+      $(this).children(".sub-menu").stop().show();
+    })
+    $(".main-menu>li").mouseleave(function () {
+      $(this).children(".sub-menu").stop().hide();
+    })
+    </script>
+</body>
+</html>
